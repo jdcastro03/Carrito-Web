@@ -1,0 +1,128 @@
+body {
+    font-family: 'Inter';
+    background-color: #918B76;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+.contenedor-registro {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.contenedor-registro-panel {
+    padding: 2rem .5rem 2rem .5rem;
+    background-color: #503C3C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 20%;
+}
+
+.registro-icono {
+    display: flex;
+    justify-content: center;
+}
+
+.icono-cont-img {
+    background-color: #7E6363;
+    padding: 2rem;
+    border-radius: 50%;
+    border: .1rem solid white;
+    width: 7rem;
+}
+
+.icono-img {
+    max-width: 7rem;
+}
+
+
+.registro-campos input {
+    background-color: #503C3C;
+    border: none;
+    border-bottom: .13rem solid white;
+    width: 90%;
+    color: white;
+    margin-top: 2rem;
+}
+
+.registro-campos input::placeholder {
+    color: white;
+}
+
+
+.registro-botones {
+    margin-top: 3rem;
+}
+
+.boton {
+    border-radius: .4rem;
+    border-style: none;
+    background-color: #7E6363;
+    color: white;
+    padding: .6rem 1.1rem;
+    width: 10rem;
+}
+
+.boton:hover {
+    background-color: #7e636380;
+    cursor: pointer;
+}
+
+.btn-ingresar {
+    float: left;
+    margin-left: 1.1rem;
+}
+
+.btn-restaurar {
+    float: right;
+    margin-right: 1.1rem;
+}
+
+.password-icono {
+    width: 1.5rem;
+    margin-left: -2rem;
+    margin-bottom: -.3rem;
+}
+
+.ver-password:hover {
+    cursor: pointer;
+}
+
+.ver-password-c:hover {
+    cursor: pointer;
+}
+
+
+.exito-cont-img {
+    /* display: flex;
+    justify-content: center; */
+    background-color: #7E6363;
+    padding: 2rem;
+    border-radius: 50%;
+    border: .1rem solid white;
+    width: 12rem;
+}
+
+.exito-img {
+    max-width: 11rem;
+}
+
+.exito-titulo {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.exito-h1 {
+    margin: 2rem 0 8rem 0;
+}
+
+.btn-continuar {
+    width: 14rem;
+}
