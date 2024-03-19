@@ -1,87 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina de Tareas</title>
 
     <!-- Preload -->
-    <link rel="preload" href="css/normalize.css" as="style">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
 
-    <link rel="preload" href="../css/carrito.css" as="style">
-    <link rel="stylesheet" href="../css/carrito.css">
+    <link rel="preload" href="../css/carrito.css" as="style" />
+    <link rel="stylesheet" href="../css/carrito.css" />
 
     <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
+  <body>
     <header class="header">
-        <div class="header-logo">
-            <img src="../img/cafe.webp" alt="cafe logo">
-            <h1>Café del bosque</h1>
-        </div>
+      <div class="header-logo">
+        <img src="../img/cafe.webp" alt="cafe logo" />
+        <h1>Café del bosque</h1>
+      </div>
 
-        <div class="header-links">
-            <a class="link" href="productos.html">Productos</a>
-            <a class="link" href="configuracion.html">Configuracion</a>
-            <a class="link seleccionado" href="contacto.html">Contacto</a>
-            <a class="link" href="">Usuario 1</a>
-            <a class="boton" href="carrito.html">Carrito (<span class="boton-carrito">2</span>)</a>
-        </div>
+      <div class="header-links">
+        <a class="link" href="productos.html">Productos</a>
+        <a class="link" href="configuracion.html">Configuracion</a>
+        <a class="link seleccionado" href="contacto.html">Contacto</a>
+        <a class="link" href="">Usuario 1</a>
+        <a class="boton" href="carrito.html"
+          >Carrito (<span class="boton-carrito">2</span>)</a
+        >
+      </div>
     </header>
 
     <div class="banner">
-        <div class="subtitulo">
-            <h2>Carrito de compra</h2>
-        </div>
+      <div class="subtitulo">
+        <h2>Carrito de compra</h2>
+      </div>
     </div>
 
     <section class="contenedor-productos">
-        <div class="producto">
-            <div class="cont-img">
-                <img src="../img/productos/producto1.webp" alt="producto 1">
-            </div>
-            <div>
-                <h3 class="titulo-producto">NESCAFÉ® Taster's Choice® Caramel Dark Chocolate</h3>
-                <h3 class="precio-producto">$<span class="precio-producto-monto">150</span> / pz</h3>
-            </div>
-            <div class="cont-precio-boton">
-                <div class="cantidad">
-                    <h3 class="label-cantidad">Cantidad:</h3>
-                    <input class="cantida-producto" type="number" name="cantidad" required>
-                </div>
-                <button class="eliminar-carrito">Eliminar</button>
-            </div>
+      <div class="producto">
+        <div class="cont-img">
+          <img src="../img/productos/producto1.webp" alt="producto 1" />
         </div>
-
-        <div class="producto">
-            <div class="cont-img">
-                <img src="../img/productos/producto2.webp" alt="producto 2">
-            </div>
-            <div>
-                <h3 class="titulo-producto">NESCAFÉ® Taster's Choice® Tostado y Molido</h3>
-                <h3 class="precio-producto">$<span class="precio-producto-monto">250</span> / pz</h3>
-            </div>
-            <div class="cont-precio-boton">
-                <div class="cantidad">
-                    <h3 class="label-cantidad">Cantidad:</h3>
-                    <input class="cantida-producto" type="number" name="cantidad" required>
-                </div>
-                <button class="eliminar-carrito">Eliminar</button>
-            </div>
+        <div>
+          <h3 class="titulo-producto">
+            NESCAFÉ® Taster's Choice® Caramel Dark Chocolate
+          </h3>
+          <h3 class="precio-producto">
+            $<span class="precio-producto-monto">150</span> / pz
+          </h3>
         </div>
+        <div class="cont-precio-boton">
+          <div class="cantidad">
+            <h3 class="label-cantidad">Cantidad:</h3>
+            <input
+              class="cantida-producto"
+              type="number"
+              name="cantidad"
+              required
+            />
+          </div>
+          <button class="eliminar-carrito">Eliminar</button>
+        </div>
+      </div>
 
-        <!-- <div class="producto">
+      <div class="producto">
+        <div class="cont-img">
+          <img src="../img/productos/producto2.webp" alt="producto 2" />
+        </div>
+        <div>
+          <h3 class="titulo-producto">
+            NESCAFÉ® Taster's Choice® Tostado y Molido
+          </h3>
+          <h3 class="precio-producto">
+            $<span class="precio-producto-monto">250</span> / pz
+          </h3>
+        </div>
+        <div class="cont-precio-boton">
+          <div class="cantidad">
+            <h3 class="label-cantidad">Cantidad:</h3>
+            <input
+              class="cantida-producto"
+              type="number"
+              name="cantidad"
+              required
+            />
+          </div>
+          <button class="eliminar-carrito">Eliminar</button>
+        </div>
+      </div>
+
+      <!-- <div class="producto">
             <div class="cont-img">
                 <img src="../img/productos/producto3.webp" alt="producto 3">
             </div>
@@ -149,14 +173,15 @@
             </div>
         </div> -->
 
-        <div class="carrito-total">
-            <h2 class="total-label">Total: <span class="total-cantidad">$0</span></h2>
-            <button class="boton btn-pago">Proceder al pago</button>
-        </div>
+      <div class="carrito-total">
+        <h2 class="total-label">
+          Total: <span class="total-cantidad">$0</span>
+        </h2>
+        <button class="boton btn-pago">Proceder al pago</button>
+      </div>
     </section>
+    <script src="../js/configuracion.js"></script>
+  </body>
 
-</body>
-
-<script src="js/productos.js"></script>
-
+  <script src="js/productos.js"></script>
 </html>

@@ -1,58 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina de Tareas</title>
 
     <!-- Preload -->
-    <link rel="preload" href="../css/normalize.css" as="style">
-    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preload" href="../css/normalize.css" as="style" />
+    <link rel="stylesheet" href="../css/normalize.css" />
 
-    <link rel="preload" href="../css/registrarse.css" as="style">
-    <link rel="stylesheet" href="../css/registrarse.css">
+    <link rel="preload" href="../css/registrarse.css" as="style" />
+    <link rel="stylesheet" href="../css/registrarse.css" />
 
     <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
+  <body>
     <section class="contenedor-registro">
-        <form class="contenedor-registro-panel">
-            <div class="registro-icono">
-                <div class="icono-cont-img">
-                    <img class="icono-img" src="../img/usuario.webp" alt="icono user">
-                </div>
-            </div>
-            <H1 class="titulo-h1">Registrarse</H1>
-            <div class="registro-campos">
-                <input class="nombre" type="text" name="nombre" placeholder="Nombre" required>
-                <input class="edad" type="number" name="edad" placeholder="Edad" required>
-                <input class="email" type="email" name="username" placeholder="Email" required>
-                <input class="usuario" type="text" name="username" placeholder="Usuario" required>
-                <input class="password" type="password" name="password" placeholder="Contraseña" required>
-                <span class="ver-password">
-                    <img class="password-icono" src="../img/ojo.webp" alt="ojo">
-                </span>
-                <input class="confirm-password" type="password" name="confirm-password"
-                    placeholder="Confirmar contraseña" required>
-                <span class="ver-password-c">
-                    <img class="password-icono" src="../img/ojo.webp" alt="ojo">
-                </span>
-            </div>
-            <div class="registro-botones">
-                <button class="boton btn-ingresar" type="submit">Enviar</button>
-                <button class="boton btn-restaurar" type="reset">Cancelar</button>
-            </div>
-        </form>
+      <form class="contenedor-registro-panel">
+        <div class="registro-icono">
+          <div class="icono-cont-img">
+            <img class="icono-img" src="../img/usuario.webp" alt="icono user" />
+          </div>
+        </div>
+        <h1 class="titulo-h1">Registrarse</h1>
+        <div class="registro-campos">
+          <input
+            class="nombre"
+            type="text"
+            name="nombre"
+            placeholder="Nombre"
+            required
+          />
+          <input
+            class="edad"
+            type="number"
+            name="edad"
+            placeholder="Edad"
+            required
+          />
+          <input
+            class="email"
+            type="email"
+            name="username"
+            placeholder="Email"
+            required
+          />
+          <input
+            class="usuario"
+            type="text"
+            name="username"
+            placeholder="Usuario"
+            required
+          />
+          <input
+            class="password"
+            type="password"
+            name="password"
+            placeholder="Contraseña"
+            required
+          />
+          <span class="ver-password">
+            <img class="password-icono" src="../img/ojo.webp" alt="ojo" />
+          </span>
+          <input
+            class="confirm-password"
+            type="password"
+            name="confirm-password"
+            placeholder="Confirmar contraseña"
+            required
+          />
+          <span class="ver-password-c">
+            <img class="password-icono" src="../img/ojo.webp" alt="ojo" />
+          </span>
+        </div>
+        <div class="registro-botones">
+          <button class="boton btn-ingresar" type="submit">Enviar</button>
+          <button class="boton btn-restaurar" type="reset">Cancelar</button>
+        </div>
+      </form>
     </section>
+    <script src="../js/configuracion.js"></script>
+  </body>
 
-</body>
-
-<script src="../js/registrarse.js"></script>
-
+  <script src="../js/registrarse.js"></script>
 </html>
