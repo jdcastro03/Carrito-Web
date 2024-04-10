@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina de Tareas</title>
+
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <link rel="preload" href="../css/productos.css" as="style" />
+    <link rel="stylesheet" href="../css/productos.css" />
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <img src="../img/cafe.webp" alt="cafe logo" />
+        <h1>Café del bosque</h1>
+      </div>
+
+      <div class="header-links">
+        <a class="link seleccionado" href="productos.html">Productos</a>
+        <a class="link" href="configuracion.html">Configuracion</a>
+        <a class="link" href="contacto.html">Contacto</a>
+        <a class="link" href="">Usuario 1</a>
+        <a class="boton" href="carrito.html"
+          >Carrito (<span class="boton-carrito">2</span>)</a
+        >
+      </div>
+    </header>
+
+    <div class="banner">
+      <div class="subtitulo">
+        <h2>Productos</h2>
+      </div>
+      <form class="form-buscar">
+        <input class="input-buscar" type="text" name="buscar" />
+        <button class="btn-buscar" type="submit">Buscar</button>
+      </form>
+    </div>
+
+    <div class="contenedor-centrado">
+      <section class="contenedor-productos">
+        <div class="producto">
+          <div class="cont-img">
+            <img src="../img/productos/producto1.webp" alt="producto 1" />
+          </div>
+          <h3 class="titulo-producto">
+            NESCAFÉ® Taster's Choice® Caramel Dark Chocolate
+          </h3>
+          <div class="cont-precio-boton">
+            <h3 class="precio-producto">$150 / pz</h3>
+            <button class="agregar-carrito">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="producto">
+          <div class="cont-img">
+            <img src="../img/productos/producto2.webp" alt="producto 2" />
+          </div>
+          <h3 class="titulo-producto">
+            NESCAFÉ® Taster's Choice® Tostado y Molido
+          </h3>
+          <div class="cont-precio-boton">
+            <h3 class="precio-producto">$250 / pz</h3>
+            <button class="agregar-carrito">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="producto">
+          <div class="cont-img">
+            <img src="../img/productos/producto3.webp" alt="producto 3" />
+          </div>
+          <h3 class="titulo-producto">NESTLÉ® COFFEE MATE® Almendra</h3>
+          <div class="cont-precio-boton">
+            <h3 class="precio-producto">$90 / pz</h3>
+            <button class="agregar-carrito">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="producto">
+          <div class="cont-img">
+            <img src="../img/productos/producto4.webp" alt="producto 4" />
+          </div>
+          <h3 class="titulo-producto">NESTLÉ® COFFEE MATE® Coco</h3>
+          <div class="cont-precio-boton">
+            <h3 class="precio-producto">$90 / pz</h3>
+            <button class="agregar-carrito">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="producto">
+          <div class="cont-img">
+            <img src="../img/productos/producto5.webp" alt="producto 5" />
+          </div>
+          <h3 class="titulo-producto">
+            NESTLÉ® COFFEE MATE® Polvo Extra Cremoso
+          </h3>
+          <div class="cont-precio-boton">
+            <h3 class="precio-producto">$95 / pz</h3>
+            <button class="agregar-carrito">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="producto">
+          <div class="cont-img">
+            <img src="../img/productos/producto6.webp" alt="producto 6" />
+          </div>
+          <h3 class="titulo-producto">NESCAFÉ® Black: Tostado Intenso</h3>
+          <div class="cont-precio-boton">
+            <h3 class="precio-producto">$120 / pz</h3>
+            <button class="agregar-carrito">Agregar al carrito</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="../js/configuracion.js"></script>
+  </body>
+
+  <script src="js/productos.js"></script>
+</html>

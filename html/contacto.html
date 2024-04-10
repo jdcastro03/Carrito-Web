@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina de Tareas</title>
+
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <link rel="preload" href="../css/contacto.css" as="style" />
+    <link rel="stylesheet" href="../css/contacto.css" />
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <img src="../img/cafe.webp" alt="cafe logo" />
+        <h1>Café del bosque</h1>
+      </div>
+
+      <div class="header-links">
+        <a class="link" href="productos.html">Productos</a>
+        <a class="link" href="configuracion.html">Configuracion</a>
+        <a class="link seleccionado" href="contacto.html">Contacto</a>
+        <a class="link" href="">Usuario 1</a>
+        <a class="boton" href="carrito.html">Carrito (2)</a>
+      </div>
+    </header>
+
+    <div class="banner">
+      <div class="subtitulo">
+        <h2>Sobre nosotros</h2>
+      </div>
+      <div class="sobre-nosotros">
+        <h4>
+          ¡Bienvenido a Café del Bosque! Nos dedicamos a ofrecerte los mejores
+          granos de café, cuidadosamente seleccionados de los mejores cafetales
+          del mundo. Nuestro objetivo es brindarte una experiencia única en cada
+          taza, llena de sabor y aroma. ¡Gracias por elegir Café del Bosque para
+          disfrutar de tu café favorito!
+        </h4>
+      </div>
+    </div>
+
+    <div class="contenedor-centrado">
+      <div class="redes-contacto">
+        <div class="redes-elemento">
+          <img src="../img/cafe.webp" alt="logo cafe" />
+          <h4>Correo: info@cafedelbosque.com</h4>
+        </div>
+        <div class="redes-elemento">
+          <img src="../img/twitter.webp" alt="logo twitter" />
+          <h4>@CafeBosk</h4>
+        </div>
+        <div class="redes-elemento">
+          <img src="../img/instagram.webp" alt="logo instagram" />
+          <h4>@CafeBosk</h4>
+        </div>
+      </div>
+      <div class="centrar-form">
+        <form class="form-contacto">
+          <div class="contacto-elemento">
+            <label for="nombre">Nombre:</label>
+            <input class="nombre" type="text" name="nombre" required />
+          </div>
+          <div class="contacto-elemento contacto-correo">
+            <label for="correo">Correo:</label>
+            <input class="correo" type="email" name="correo" required />
+          </div>
+          <div class="contacto-elemento contacto-mensaje">
+            <label for="mensaje">Mensaje:</label>
+            <textarea class="mensaje" id="message"></textarea>
+          </div>
+          <div class="form-botones">
+            <button class="btn-form reset" type="reset">
+              Reiniciar campos
+            </button>
+            <button class="btn-form enviar">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="../js/configuracion.js"></script>
+  </body>
+
+  <script src="js/productos.js"></script>
+</html>
