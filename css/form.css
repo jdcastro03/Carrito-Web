@@ -1,0 +1,228 @@
+:root{
+    --blanco: #FFFFFF;
+    --negro: #00171F;
+    --primario: #003459;
+}
+body{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    
+
+}
+
+html{
+
+    background-color: var(--blanco);
+}
+
+header div {    
+    height: 5rem;
+    background-color: #00171F;
+    border-radius: 2.5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    
+    
+}
+
+header h1{
+
+    text-align: center;
+    color: #FFFFFF;
+    padding: 1.5rem;
+    
+}
+header div{
+    display: flex;
+    
+    align-items: center;
+
+}
+header div a{
+    align-items: flex-start;
+    margin-left: 1rem;
+    margin-right: 29rem;
+
+}
+main{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedorForm{
+
+    display: flex;
+    justify-content: center;
+    border-radius: 2.5rem;
+    width: 160rem;
+    
+    margin-top: 1.1rem;
+    margin-bottom: .25rem;
+    border: 3px solid #000
+   
+}
+.contenedorForm h2{
+    text-align: center;
+    
+}
+
+.formulario{
+    background-color: #E8E9ED;
+    width: min(60rem, 100%);
+    justify-content: center;
+    width: auto;
+    
+    padding: 2rem;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+    height: 40rem;
+}
+
+.formulario fieldset{
+    border: none;
+    
+}
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    
+}
+
+
+.contenedorInputs{
+    height: 20rem;
+}
+.contenedorInputs div{
+    margin-bottom: 1rem;
+    height: 3.5rem;
+
+}
+
+.contenedorInputs label{
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+    
+}
+.contenedorInputs input{
+    width: 85%;
+    
+    padding: .5rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+
+.boton:hover{
+    background-color: var(--primario);
+    color: var(--blanco);
+    cursor: pointer;
+    
+    }
+.boton{
+    background-color: var(--primario);
+    color: var(--blanco);
+    font-weight: bold;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    
+    margin-right: 1rem; 
+    width: 9.25rem;
+    
+   
+}
+.botones{
+    margin-top: 8rem;
+    display: flex;
+    
+    
+    
+    
+    #limpiar{
+       width: 9.4rem;
+       text-align: center;
+    }
+    
+
+
+
+    
+
+    
+
+}
+
+.campoContra{
+
+    display: flex;
+    justify-content: row;
+    align-items: center;
+    margin-bottom: 1rem;
+
+}
+.campoContra input {
+    width: 18.5rem; /* Define el ancho del input según tus necesidades */
+    margin-right: 10px; /* Ajusta el margen derecho del input según tus necesidades */
+    margin-bottom: 1rem;
+    
+}
+
+.campoContra button {
+    width: 2rem; /* Define el ancho del botón según tus necesidades */
+   /* Ajusta el margen izquierdo del botón según tus necesidades */
+    margin-bottom: 1rem;
+    height: 1.5rem;
+    padding: 0;
+    border: none;
+    background-color: var(--primario);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    line-height: 1.5rem;
+    border-radius: 0.5rem;
+    
+
+}
+
+.campoContra button:hover {
+    background-color: var(--negro);
+    color: var(--primario);
+}
+
+.botones input:hover {
+    background-color: var(--blanco);
+    color: var(--primario);
+}
+
+
+
+
+.alerts{
+
+    display: block;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 15rem;
+    margin-bottom: .5rem;
+    margin-left: 2rem;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    width: 100rem;
+    background-color:#E8E9ED;
+    margin-right: 10rem;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    height: 25rem;
+    padding: 2rem;
+
+}
+.invalid-input {
+    border: 2px solid red;
+}

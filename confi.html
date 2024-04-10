@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="css/configuracion.css" as="style" />
+    <link rel="stylesheet" href="css/configuracion.css" />
+    <title>Informacion Personal</title>
+  </head>
+  <body>
+    <header>
+      <h1>Informacion Personal</h1>
+    </header>
+    <div class="nav-bg">
+      <nav class="navegacion-principal contenedor">
+        <a class="back" href="paginaPrincipal.html"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-arrow-back-up"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M9 14l-4 -4l4 -4" />
+            <path d="M5 10h11a4 4 0 1 1 0 8h-1" /></svg
+        ></a>
+        <a href="informacionPersonal.html">Informacion Personal</a>
+        <a href="formacionAcademica.html">Formacion Academica</a>
+        <a href="situacionLaboral.html">Situacion Laboral</a>
+        <a href="actividades.html">Actividades Extraescolares</a>
+        <a href="configuracion.html">Configuracion</a>
+      </nav>
+    </div>
+    <main>
+      <div class="marcos">
+        <div class="fondo">
+          <section>
+            <h2>FONDO</h2>
+          </section>
+        </div>
+        <div class="fondo">
+          <section>
+            <h2>Color de Fondo:</h2>
+            <input
+              type="color"
+              id="colorInput"
+              onchange="cambiarColorFondo()"
+            />
+          </section>
+        </div>
+        <div class="fondo">
+          <section>
+            <h2>ENLACES</h2>
+          </section>
+        </div>
+        <div class="fondo">
+          <section>
+            <h2>Color del Enlace:</h2>
+            <input
+              type="color"
+              id="colorInputEnlaces"
+              onchange="cambiarColorEnlaces()"
+            />
+          </section>
+        </div>
+        <div class="fondo">
+          <section>
+            <h2>Color del Fondo de los Enlaces:</h2>
+            <input
+              type="color"
+              id="colorFondoInputEnlaces"
+              onchange="cambiarColorFondoEnlaces()"
+            />
+          </section>
+        </div>
+        <div class="fondo">
+          <section>
+            <h2>Redondeo de Enlaces: :</h2>
+            <button id="redondearBtn">Redondear Enlaces</button>
+            <button id="desredondearBtn">Desredondear Enlaces</button>
+          </section>
+        </div>
+        <div class="fondo">
+          <section>
+            <h2>IMAGENES</h2>
+          </section>
+        </div>
+        <div class="fondo">
+          <section>
+            <h2>Tamaño de Imagenes: :</h2>
+            <button id="chicasBtn">Chicas</button>
+            <button id="medianasBtn">Medianas</button>
+            <button id="grandesBtn">Grandes</button>
+          </section>
+        </div>
+        <div class="fondo">
+          <section>
+            <h2>Bordes en las imagenes: :</h2>
+            <button id="bordesDelgadosBtn">Si</button>
+            <button id="eliminarBordesBtn">No</button>
+          </section>
+        </div>
+        <div class="fondo">
+          <section>
+            <h2>Tamaño de los bordes: :</h2>
+            <button id="pequenosBtn">Chico</button>
+            <button id="medianosBtn">Mediano</button>
+            <button id="grandesBtn">Grande</button>
+          </section>
+        </div>
+        <div class="fondo">
+          <section>
+            <h2>Color de los Bordes:</h2>
+            <input
+              type="color"
+              id="colorBordeInput"
+              onchange="establecerColorBorde"
+            />
+          </section>
+        </div>
+        <div class="fondo">
+          <section>
+            <h2>Redondeo de Esquinas: :</h2>
+            <button id="redondearEsquinasChicoBtn">Chico</button>
+            <button id="redondearEsquinasMedianoBtn">Mediano</button>
+            <button id="redondearEsquinasGrandeBtn">Grande</button>
+          </section>
+        </div>
+        <div class="fondo">
+          <section>
+            <h2>Sombra en las imagenes: :</h2>
+            <button id="sombraBtn">Si</button>
+            <button id="eliminarSombraBtn">No</button>
+          </section>
+        </div>
+        <div class="fondo">
+          <section>
+            <h2>TABLAS</h2>
+          </section>
+        </div>
+        <div class="fondo">
+          <section>
+            <h2>Color de los Bordes de la tabla:</h2>
+            <input type="color" id="colorBordeTablaInput" />
+          </section>
+        </div>
+        <div class="fondo">
+          <section>
+            <h2>Color de fondo:</h2>
+            <input type="color" id="colorFondoTablaInput" />
+          </section>
+        </div>
+        <div class="fondo">
+          <section>
+            <h2>Color de celdas de los Titulos:</h2>
+            <input type="color" id="colorCeldasTituloInput" />
+          </section>
+        </div>
+        <div class="fondo">
+          <section>
+            <h2>FUENTE</h2>
+          </section>
+        </div>
+        <div class="fondo">
+          <section>
+            <h2>Color de Fuente:</h2>
+            <input type="color" id="colorFuenteInput" />
+          </section>
+        </div>
+        <div class="fondo">
+          <section>
+            <h2>Tamaño de la fuente: :</h2>
+            <button id="tamanioChicoBtn">Chica</button>
+            <button id="tamanioMedianoBtn">Mediana</button>
+            <button id="tamanioGrandeBtn">Grande</button>
+          </section>
+        </div>
+        <div class="fondo">
+          <section>
+            <h2>Color de fondo:</h2>
+            <input
+              type="color"
+              id="colorFondoTextoInput"
+              onchange="establecerColorFondoTexto()"
+            />
+          </section>
+        </div>
+        <div class="fondo">
+          <section>
+            <button onclick="restablecerConfiguracion()">
+              Restablecer Configuracion
+            </button>
+          </section>
+        </div>
+      </div>
+      <div class="misDatos">
+        <section>
+          <h2>Juan Daniel Najera Castro</h2>
+        </section>
+        <section>
+          <img src="img/imagenjuanda.jpg" alt="" />
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p><strong>Elaborado por: </strong> Juan Daniel Najera Castro</p>
+    </footer>
+    <script src="js/configuracion.js"></script>
+  </body>
+</html>

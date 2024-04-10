@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="css/inputs.css" as="style" />
+    <link rel="stylesheet" href="css/inputs.css" />
+    <link rel="stylesheet" href="" />
+
+    <title>HTML5 Inputs</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="index.html"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-arrow-back-up"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M9 14l-4 -4l4 -4" />
+            <path d="M5 10h11a4 4 0 1 1 0 8h-1" /></svg
+        ></a>
+        <section>
+          <h1>Practica 3 HTML5 Inputs</h1>
+        </section>
+      </div>
+    </header>
+    <main>
+      <div class="contenedorConceptos">
+        <div class="conceptos">
+          <section>
+            <h2>Output Element</h2>
+            <p>
+              Esta etiqueta se utiliza para mostrar resultados en una página
+              web. Imagina que estás usando una calculadora en línea y quieres
+              ver el resultado de una operación. La etiqueta te permite mostrar
+              ese resultado en la página.
+            </p>
+          </section>
+        </div>
+        <div class="conceptos">
+          <section>
+            <h2>Input Type Password</h2>
+            <p>
+              La etiqueta Input con el atributo type="password" se utiliza en
+              formularios HTML para crear un campo de entrada de contraseña.
+              Cuando el usuario ingresa datos en este campo, los caracteres se
+              muestran como asteriscos o puntos para ocultar la contraseña y
+              proteger la privacidad del usuario.
+            </p>
+          </section>
+        </div>
+        <div class="conceptos">
+          <section>
+            <h2>Input Type Reset</h2>
+            <p>
+              La etiqueta Input con el atributo type="reset" se utiliza en
+              formularios HTML para crear un botón de reinicio. Cuando el
+              usuario hace clic en este botón dentro de un formulario, se
+              restablecen todos los campos del formulario a sus valores
+              predeterminados o vacíos.
+            </p>
+          </section>
+        </div>
+      </div>
+
+      <div class="contenedorForm">
+        <section>
+          <h2>FORMULARIO</h2>
+
+          <form
+            class="formulario"
+            oninput="
+          salida.value = nombres.value + ' ' + apellidos.value;"
+          >
+            <fieldset>
+              <legend>Ingresa tus datos</legend>
+
+              <div class="contenedorInputs">
+                <div>
+                  <label>Nombres: </label>
+                  <input type="text" name="nombres" placeholder="Nombre" />
+                </div>
+
+                <div>
+                  <label>Apellidos: </label>
+                  <input type="text" name="apellidos" placeholder="Apellido" />
+                </div>
+                <div>
+                  <label>Contraseña: </label>
+                  <input type="password" placeholder="Contraseña" />
+                </div>
+                <div>
+                  <label>Nombre Completo: </label>
+                  <output name="salida"></output>
+                </div>
+              </div>
+
+              <div class="botones">
+                <input
+                  class="boton"
+                  type="submit"
+                  value="ENVIAR"
+                  id="enviarBoton"
+                />
+                <input class="boton" type="reset" value="LIMPIAR" />
+              </div>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+      <script src="js/script.js"></script>
+    </main>
+  </body>
+</html>

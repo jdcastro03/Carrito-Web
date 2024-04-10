@@ -1,0 +1,186 @@
+:root{
+    --blanco: #FFFFFF;
+    --negro: #00171F;
+    --primario: #003459;
+}
+body{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    
+
+}
+
+html{
+
+    background-color: var(--blanco);
+}
+
+header div {    
+    height: 5rem;
+    background-color: #00171F;
+    border-radius: 2.5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    
+    
+}
+
+header h1{
+
+    text-align: center;
+    color: #FFFFFF;
+    padding: 1.5rem;
+    
+}
+
+.contenedorConceptos{
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    padding-left: 0.3rem; 
+    margin-top: .5rem;
+    width: 50%;
+}
+
+.conceptos{
+    background-color: var(--primario);
+    
+    height: 10rem;
+    border-radius: 2.5rem;
+    text-align: justify;
+    width: 90%;
+    margin-top: .5rem;
+    color: var(--blanco);
+    margin-right: 3000rem;
+    padding: 1.5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.conceptos h2{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contenedorForm{
+
+    display: flex;
+    justify-content: center;
+    border-radius: 2.5rem;
+    width: 50%;
+    
+    margin-top: 1.1rem;
+    margin-bottom: .25rem;
+    border: 3px solid #000
+   
+}
+.contenedorForm h2{
+    text-align: center;
+    
+}
+
+.formulario{
+    background-color: #E8E9ED;
+    width: min(60rem, 100%);
+    justify-content: center;
+    width: auto;
+    
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+.formulario fieldset{
+    border: none;
+    
+}
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    
+}
+
+
+.contenedorInputs{
+    height: 20rem;
+}
+.contenedorInputs div{
+    margin-bottom: 1rem;
+
+}
+
+.contenedorInputs label{
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+    
+}
+.contenedorInputs input{
+    width: 85%;
+    border: none;
+    padding: .5rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+
+.boton:hover{
+    background-color: var(--primario);
+    color: var(--blanco);
+    cursor: pointer;
+    border: none;
+    }
+.boton{
+    background-color: var(--primario);
+    color: var(--blanco);
+    font-weight: bold;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    border: none
+   
+}
+.botones{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+}
+
+output{
+    margin-top: auto¿¿¿;
+    width: 85%;
+    border: none;
+    padding: .5rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    
+    padding: 1%  ;
+}
+
+header div{
+    display: flex;
+    
+    align-items: center;
+
+}
+header div a{
+    align-items: flex-start;
+    margin-left: 1rem;
+    margin-right: 29rem;
+
+}
+main{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+

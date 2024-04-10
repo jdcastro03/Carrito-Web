@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="css/form.css" as="style" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="" />
+
+    <title>HTML5 Inputs</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="index.html"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-arrow-back-up"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M9 14l-4 -4l4 -4" />
+            <path d="M5 10h11a4 4 0 1 1 0 8h-1" /></svg
+        ></a>
+        <section>
+          <h1>FORMULARIO VALIDADO</h1>
+        </section>
+      </div>
+    </header>
+    <main>
+      <div class="contenedorForm">
+        <section>
+          <h2>FORMULARIO</h2>
+
+          <form class="formulario">
+            <fieldset>
+              <legend>Ingresa tus datos</legend>
+
+              <div class="contenedorInputs">
+                <div>
+                  <label>Nombre: </label>
+                  <input
+                    type="text"
+                    name="nombres"
+                    id="nombreInput"
+                    placeholder="Nombre"
+                  />
+                </div>
+
+                <div>
+                  <label>Edad: </label>
+                  <input
+                    type="text"
+                    name="apellidos"
+                    id="edadInput"
+                    placeholder="Edad"
+                  />
+                </div>
+                <div>
+                  <label>Email: </label>
+                  <input
+                    type="email"
+                    placeholder="letrasynumeros@letras.loquesea"
+                  />
+                </div>
+                <div>
+                  <label>Usuario: </label>
+                  <input type="text" placeholder="Usuario" />
+                </div>
+                <div>
+                  <label>Contraseña: </label>
+                  <div class="campoContra">
+                    <input type="password" placeholder="Contraseña" />
+                    <button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-eye"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="1"
+                        stroke="#ffffff"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                        <path
+                          d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div>
+                  <label>Confirmar Contraseña: </label>
+                  <div class="campoContra">
+                    <input type="password" placeholder="Confirmar Contraseña" />
+                    <button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-eye"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="1"
+                        stroke="#ffffff"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                        <path
+                          d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="botones">
+                <input
+                  class="boton"
+                  type="submit"
+                  value="ENVIAR"
+                  id="enviarBoton"
+                  onclick="mostrarExitoEnvio()"
+                />
+                <input
+                  type="submit"
+                  id="limpiar"
+                  class="boton"
+                  value="LIMPIAR"
+                  onclick="limpiarCampos()"
+                />
+              </div>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+
+      <div class="alerts"></div>
+      <script src="js/form.js"></script>
+    </main>
+  </body>
+</html>

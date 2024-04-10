@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Gestión de Productos</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/gestion.css" />
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <img src="../img/cafe.webp" alt="cafe logo" />
+        <h1>Café del bosque</h1>
+      </div>
+      <div class="header-links">
+        <a class="link" href="productos.php">Productos</a>
+        <a class="link" href="configuracion.php">Configuración</a>
+        <a class="link" href="contacto.php">Contacto</a>
+        <a class="link seleccionado" href="gestion.php">Gestión de productos</a>
+      </div>
+    </header>
+    <div class="banner">
+      <div class="subtitulo">
+        <h2>Gestión de productos</h2>
+      </div>
+      <div class="gestion-links-cont">
+        <div class="gestion-links">
+          <a class="link-gestion" href="agregarProducto.html"
+            >Agregar producto</a
+          >
+          <a class="link-gestion" href="bajaProducto.html"
+            >Alta/Baja producto</a
+          >
+          <a class="link-gestion" href="modificarProducto.html"
+            >Modificar producto</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra de búsqueda -->
+    <div class="search-bar">
+      <input type="text" id="buscarProducto" placeholder="Buscar producto..." />
+      <button type="button">Buscar</button>
+    </div>
+
+    <!-- Listado de productos -->
+    <div class="lista-productos">
+      <!-- Producto 1 -->
+      <div class="product-item">
+        <img src="../img/producto1.jpg" alt="Producto 1" />
+        <div class="product-item-details">
+          <h3>Producto 1</h3>
+          <p>Descripción del Producto 1.</p>
+          <p>Precio: $10.00</p>
+          <a href="editarProducto.html" class="edit-button">Editar</a>
+        </div>
+      </div>
+      <!-- Producto 2 -->
+      <div class="product-item">
+        <img src="../img/producto2.jpg" alt="Producto 2" />
+        <div class="product-item-details">
+          <h3>Producto 2</h3>
+          <p>Descripción del Producto 2.</p>
+          <p>Precio: $15.00</p>
+          <a href="editarProducto.html" class="edit-button">Editar</a>
+        </div>
+      </div>
+      <!-- Producto 3 -->
+      <div class="product-item">
+        <img src="../img/producto3.jpg" alt="Producto 3" />
+        <div class="product-item-details">
+          <h3>Producto 3</h3>
+          <p>Descripción del Producto 3.</p>
+          <p>Precio: $20.00</p>
+          <a href="editarProducto.html" class="edit-button">Editar</a>
+        </div>
+      </div>
+      <!-- Producto 4 -->
+      <div class="product-item">
+        <img src="../img/producto4.jpg" alt="Producto 4" />
+        <div class="product-item-details">
+          <h3>Producto 4</h3>
+          <p>Descripción del Producto 4.</p>
+          <p>Precio: $25.00</p>
+          <a href="editarProducto.html" class="edit-button">Editar</a>
+        </div>
+      </div>
+      <!-- Producto 5 -->
+      <div class="product-item">
+        <img src="../img/producto5.jpg" alt="Producto 5" />
+        <div class="product-item-details">
+          <h3>Producto 5</h3>
+          <p>Descripción del Producto 5.</p>
+          <p>Precio: $30.00</p>
+          <a href="editarProducto.html" class="edit-button">Editar</a>
+        </div>
+      </div>
+      <!-- Producto 6 -->
+      <div class="product-item">
+        <img src="../img/producto6.jpg" alt="Producto 6" />
+        <div class="product-item-details">
+          <h3>Producto 6</h3>
+          <p>Descripción del Producto 6.</p>
+          <p>Precio: $35.00</p>
+          <a href="editarProducto.html" class="edit-button">Editar</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/configuracion.js"></script>
+    <script src="../js/productos.js"></script>
+  </body>
+</html>

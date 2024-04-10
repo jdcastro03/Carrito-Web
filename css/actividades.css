@@ -1,0 +1,158 @@
+:root{
+    --oscuro: #0A100D;
+    --claro: #FFFFFF    ;
+    --blanco: #73877B;
+    --primario: #B9BAA3;
+    --secundario: #2A4494;
+    --terciario: #4EA5D9;
+}
+body{
+    background-color: var(--claro);
+    border-radius: .5rem;   
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+    
+}
+body{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+
+}
+
+.titulo{
+    text-align: center;
+    font-size: 2.8rem;
+    color : var(--oscuro);
+    
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.nav-bg{
+    background-color: var(--secundario);
+    border-radius: 1.5rem;
+
+}
+
+.navegacion-principal {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 640px) {
+    .navegacion-principal{
+        flex-direction: column;
+        
+        align-items: center;
+    }
+}
+
+.navegacion-principal a{
+    color: var(--claro);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1.5rem;
+    
+}
+
+.navegacion-principal .back svg{
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.navegacion-principal .back svg:hover{
+    background-color: var(--secundario);
+    color: var(--oscuro);
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--secundario);
+    color: var(--primario);
+
+}
+.link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.link:hover {
+    background-color: #555;
+}
+
+.link-activo {
+    background-color: #555;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 3px solid var(--blanco)
+    
+}
+
+.tabla-titulo, .tabla-dato {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-titulo {
+    background-color: #f2f2f2;
+}
+
+.tabla-dato:first-child {
+    text-align: center;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.imagen img {
+    border-radius: 10px; 
+    height: 20rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ccc; 
+    padding: 10px;
+    margin-bottom: 2rem;
+}
+footer {
+    
+        
+    width: 100%;
+    background-color: var(--secundario);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 6.5rem;
+    margin-right: 25rem;
+    
+  }

@@ -1,0 +1,76 @@
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+      }
+
+    
+
+      .tareas {
+        width: 70%;
+        border-radius: 8px;
+        text-align: justify;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        flex-direction: column;
+        display: flex;
+        margin-top: 13px;
+        margin-bottom: 13px;
+        position: relative;
+      }
+
+     
+
+      
+
+      .datos{
+        height: 84%;
+        width: 27.5%;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        margin-top: 130px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        text-align: justify;
+
+        position: absolute;
+        right: 0;
+        top: 0;
+
+
+      
+
+
+        
+      }
+      .enlace{
+      
+       color: red;
+      }	
+
+      img {
+        max-width: 100%; /* La imagen no será más ancha que su contenedor */
+        height: auto; /* Mantiene la proporción original de la imagen */
+        border-radius: 8px;
+        margin-top: 10px; /* Agregado para separar la imagen del texto */
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+      }
